@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Course</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>    
+
+    <form>
+        <fieldset>
+            Your Details
+            <ul>
+                <li><label>First name: </label>
+                    <input type="text" autofocus /></li>
+                <li><label>Surname: </label>
+                    <input type="text"/></li>
+                <li><label>Position / Role: </label>
+                    <input type="text"/></li>
+                <li><label for="email_address">Email: </label>
+                        <input type="email" name="email"id="email_address" placeholder="you@domain.com" required /></li>
+                <li><label for="phone">Phone number: </label>
+                            <input type="tel" name="phone"id="phone" placeholder="+447500000000" required /></li>
+            
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            Course Details
+            <ul>
+                <li><label>Course Details: </label>
+                    <select>
+                        <option value="Java">Programming with JavaScript</option>
+                        <option value="HTML5">Developing Web Applications using HTML5</option>
+                        <option value="Responsive"> Developing Responsive Websites</option>
+                        <option value="jQuery">Leveraging the Power of jQuery</option>
+                    </select>
+                <li><label>Number of delegates: </label>
+                    <input type="number"/></li>
+                <li><label for="date">Date: </label>
+                        <input type="date" name="date"id="date"/></li>
+            
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit"> Submit </button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
